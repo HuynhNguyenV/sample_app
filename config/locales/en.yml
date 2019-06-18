@@ -42,10 +42,6 @@ en:
   screencasts_rails_url: "http://screencasts.railstutorial.org/"
   rubyonrails_url: "http://rubyonrails.org/"
 
-  layouts:
-    application:
-      title: "Ruby on Rails Tutorial Sample App"
-
   static_pages:
     home:
       title: "Home"
