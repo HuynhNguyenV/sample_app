@@ -70,6 +70,10 @@ en:
   user: "User"
   profile: "Profile"
   settings: "Settings"
+  profile_update: "Profile update"
+  user_delete: "User deleted"
+  please_log_in: "Please log in"
+  user_delete_error: "Error user deleted"
 
   error_session: "Invalid email/password combination"
 
@@ -105,8 +109,17 @@ en:
       paragraph_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       railstutorial_contact_name_url: "contact page"
   users:
+    index:
+      all_users: "All Users"
     new:
       create_account: "Create my account"
+    edit:
+      eidt_user: "Edit User"
+      update_profile: "Update your profile"
+      save_changes: "Save changes"
+      a_change: "Change"
+    user:
+      confirm: "Are you sure?"
   sessions:
     new:
       remember: "Remember me on thi computer"

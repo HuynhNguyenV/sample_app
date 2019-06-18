@@ -1,10 +1,10 @@
-<% provide(:title, t("login")) %>
-<h1><%= t"login" %></h1>
+<% provide :title, t("login") %>
+<h1><%= t "login" %></h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(:session, url: login_path) do |f| %>
-      <%= f.label t("lbl_name") %>
-      <%= f.text_field :name, class: "form-control" %>
+      <%= f.label t("lbl_email") %>
+      <%= f.text_field :email, class: "form-control" %>
 
       <%= f.label t("lbl_password") %>
       <%= f.password_field :password, class: "form-control" %>
