@@ -35,12 +35,18 @@ en:
   about: "About"
   help: "Help"
   contact: "Contact"
+  link_logo: "sample app"
+  sign_up: "Sign up now!"
   railstutorial_url: "https://www.railstutorial.org/"
   railstutorial_help_url: "https://www.railstutorial.org/help"
   railstutorial_book_url: "https://www.railstutorial.org/book"
   railstutorial_contact_url: "https://www.railstutorial.org/contact"
   screencasts_rails_url: "http://screencasts.railstutorial.org/"
   rubyonrails_url: "http://rubyonrails.org/"
+  log_in: "Log in"
+  news: "News"
+  new_railstutorial_url: "http://news.railstutorial.org/"
+  footer_content_html: "The <a href='https://www.railstutorial.org/'>Ruby on Rails Tutorial</a> by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
 
   static_pages:
     home:
