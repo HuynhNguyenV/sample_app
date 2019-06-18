@@ -30,13 +30,29 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  # Error
+  error_count:
+    one: "The form contains %{count} error."
+    other: "The form contains %{count} errors."
+  
+  # Messages
+  user_not_found: "User not found"
+  welcome: "Welcome to the Sample App!"
+
+  # Form field labels
+  lbl_name: "Name"
+  lbl_email: "Email"
+  lbl_password: "Password"
+  lbl_re_password: "Confirm password"
+  
   title: "Ruby on Rails Tutorial Sample App"
   home: "Home"
   about: "About"
   help: "Help"
   contact: "Contact"
   link_logo: "sample app"
-  sign_up: "Sign up now!"
+  sign_up_now: "Sign up now!"
+  sign_up: "Sign up"
   railstutorial_url: "https://www.railstutorial.org/"
   railstutorial_help_url: "https://www.railstutorial.org/help"
   railstutorial_book_url: "https://www.railstutorial.org/book"
@@ -79,3 +95,6 @@ en:
       heading_1: "Contact"
       paragraph_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       railstutorial_contact_name_url: "contact page"
+  users:
+    new:
+      create_account: "Create my account"
