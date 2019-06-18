@@ -44,6 +44,7 @@ en:
   lbl_email: "Email"
   lbl_password: "Password"
   lbl_re_password: "Confirm password"
+  lbl_remember_me: "Remember me"
   
   title: "Ruby on Rails Tutorial Sample App"
   home: "Home"
@@ -106,3 +107,6 @@ en:
   users:
     new:
       create_account: "Create my account"
+  sessions:
+    new:
+      remember: "Remember me on thi computer"
