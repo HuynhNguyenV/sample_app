@@ -1,0 +1,19 @@
+development:
+  server: "smtp.sendgrid.net"
+  port: 587
+  authentication: "plain"
+  username: "h.nguyen03101996@gmail.com"
+  password: "HUYNHnga123"
+  enable_starttls_auto: true
+  host: "localhost:3000"
+  protocol: "http"
+production:
+  server: "smtp.sendgrid.net"
+  port: 587
+  authentication: "plain"
+  username: "h.nguyen03101996@gmail.com"
+  password: "HUYNHnga123"
+  domain: "heroku.com"
+  enable_starttls_auto: true
+  host: "mysterious-thicket-63313.herokuapp.com"
+  protocol: "http"

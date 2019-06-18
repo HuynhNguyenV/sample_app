@@ -17,3 +17,4 @@ resize_limit: 400
 ENV_prod_address: "smtp.gmail.com"
 ENV_prod_port: "587"
 ENV_prod_domain: "heroku.com"
+gravatar_size_3: 30
