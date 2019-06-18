@@ -1,37 +1,30 @@
 Rails.application.configure do
   config.cache_classes = true
-
   config.eager_load = true
-
-  config.consider_all_requests_local       = false
+  config.consider_all_requests_local = false
   config.action_controller.perform_caching = true
-
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
-
   config.assets.js_compressor = :uglifier
-
   config.assets.compile = false
-
   config.active_storage.service = :local
-
   config.log_level = :debug
-
   config.log_tags = [ :request_id ]
-
   config.action_mailer.perform_caching = false
-
+  config.i18n.fallbacks = true
+  config.active_support.deprecation = :notify
+  config.log_formatter = ::Logger::Formatter.new
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: ENV["host"],
-    protocol: ENV["protocol"]}
+  host = "mysterious-thicket-63313.herokuapp.com"
+  config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    address: ENV["server"],
-    port: ENV["port"],
-    authentication: ENV["authentication"],
-    user_name: ENV["username"],
-    password: ENV["password"],
-    domain: ENV["domain"],
-    enable_starttls_auto: ENV["enable_starttls_auto"]
+    address: Settings.ENV_prod_address,
+    port: Settings.ENV_prod_port,
+    authentication: :plain,
+    user_name: ENV['SENDGRID_USERNAME'],
+    password: ENV['SENDGRID_PASSWORD'],
+    domain: Settings.ENV_prod_domain,
+    enable_starttls_auto: true
   }
 
   config.i18n.fallbacks = true

@@ -5,3 +5,15 @@ size_gravatar: 80
 page_size: 10
 remember_status: 1
 password_reset_times: 2
+gravatar_size: 50
+picture_size: 5
+micropost_max: 140
+micropost_size: 50
+accept_micropost: "image/jpeg,image/gif,image/png"
+limit_size: 10
+host: "localhost:3000"
+http: "http"
+resize_limit: 400
+ENV_prod_address: "smtp.gmail.com"
+ENV_prod_port: "587"
+ENV_prod_domain: "heroku.com"

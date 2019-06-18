@@ -36,6 +36,8 @@ config/environments/*.local.yml
 
 vendor/cache/
 .idea/
+.idea/*
 
 # Ignore application configuration
 /config/application.yml
+public/uploads/micropost/picture

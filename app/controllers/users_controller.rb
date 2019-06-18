@@ -8,7 +8,10 @@ class UsersController < ApplicationController
     @users = User.paginate(page: params[:page], per_page: Settings.page_size)
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate(page: params[:page],
+      per_page: Settings.page_size)
+  end
 
   def new
     @user = User.new
@@ -54,6 +57,7 @@ class UsersController < ApplicationController
   def load_user
     @user = User.find_by id: params[:id]
     return if @user
-    render file: "public/404.html", status: :not_found, layout: false
+    flash[:warning] = t "user_not_found"
+    redirect_to root_path
   end
 end

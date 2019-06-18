@@ -24,14 +24,13 @@ class SessionsController < ApplicationController
     end
   end
 
-  def logging_in user
-    if user.activated?
-      log_in user
-      check_remember user
-      redirect_back_or user
+  def logging_in _user
+    if @user.activated?
+      log_in @user
+      check_remember @user
+      redirect_back_or @user
     else
-      message = t "account_not_activated"
-      flash[:warning] = message
+      flash[:warning] = t "check_email"
       redirect_to root_url
     end
   end

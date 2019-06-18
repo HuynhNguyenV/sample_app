@@ -23,18 +23,8 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.delivery_method = :test
-  config.action_mailer.default_url_options = { host: ENV["host"],
-    protocol: ENV["http"] }
-
-  ActionMailer::Base.smtp_settings = {
-    address: ENV["server"],
-    port: ENV["port"],
-    authentication: ENV["authentication"],
-    user_name: ENV["username"],
-    password: ENV["password"],
-    domain: ENV["domain"],
-    enable_starttls_auto: ENV["enable_starttls_auto"]
-  }
+  config.action_mailer.default_url_options = { host: Settings.host,
+    protocol: Settings.http }
 
   config.action_mailer.perform_caching = false
 
