@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
   end
 
   def check_remember user
-    if params[:session][:remember_me] == "1"
+    if params[:session][:remember_me] == Settings.remember_status.to_s
       remember user
     else
       forget user

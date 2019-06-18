@@ -41,6 +41,10 @@ en:
   activated: "Account activated!"
   activated_link: "Invalid activation link"
   account_not_activated: "Account not activated. Check your email for the activation link."
+  password_reset_info: "Email sent with password reset instructions"
+  password_reset_danger: "Email address not found"
+  password_reset_success_c: "Password has been reset."
+  password_reset_danger_c: "Password reset has expired."
 
   # Form field labels
   lbl_name: "Name"
@@ -78,6 +82,8 @@ en:
   please_log_in: "Please log in"
   user_delete_error: "Error user deleted"
   acc_activation: "Account activation"
+  forgot_password: "(forgot password)"
+  can_not_be_empty: "can't be empty"
 
   error_session: "Invalid email/password combination"
 
@@ -133,3 +139,19 @@ en:
       hi: "Hi"
       paragraph: "Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
+    password_reset:
+      password_reset: "<h1>Password reset</h1>"
+      reset_password: "Reset password"
+      paragraph_reset: "<p>To reset your password click the link below:</p>"
+      paragraph_reset_2: "<p>This link will expire in two hours.</p><br><p>If you did not request your password to be reset, please ignore this email and your password will stay as it is.</p>"
+      password_reset_text: "To reset your password click the link below:"
+      paragraph_reset_text: "This link will expire in two hours. If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+  password_resets:
+    new:
+      title_forgot_password: "Forgot Password"
+      submit: "Submit"
+    edit:
+      reset_pass: "Reset Password"
+      update_pass: "Update password"
+  acc_activation: "Account activation"
+  pass_reset: "Password reset"

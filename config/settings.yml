@@ -3,3 +3,5 @@ email_max_length: 255
 password_min_length: 6
 size_gravatar: 80
 page_size: 10
+remember_status: 1
+password_reset_times: 2
