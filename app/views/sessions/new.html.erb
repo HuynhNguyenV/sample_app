@@ -4,9 +4,10 @@
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(:session, url: login_path) do |f| %>
       <%= f.label t("lbl_email") %>
-      <%= f.text_field :email, class: "form-control" %>
+      <%= f.email_field :email, class: "form-control" %>
 
       <%= f.label t("lbl_password") %>
+      <%= link_to t("forgot_password"), new_password_reset_path %>
       <%= f.password_field :password, class: "form-control" %>
 
       <%= f.label t("lbl_remember_me"), class: "checkbox inline" do %>
