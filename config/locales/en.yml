@@ -30,4 +30,46 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  title: "Ruby on Rails Tutorial Sample App"
+  home: "Home"
+  about: "About"
+  help: "Help"
+  contact: "Contact"
+  railstutorial_url: "https://www.railstutorial.org/"
+  railstutorial_help_url: "https://www.railstutorial.org/help"
+  railstutorial_book_url: "https://www.railstutorial.org/book"
+  railstutorial_contact_url: "https://www.railstutorial.org/contact"
+  screencasts_rails_url: "http://screencasts.railstutorial.org/"
+  rubyonrails_url: "http://rubyonrails.org/"
+
+  static_pages:
+    home:
+      title: "Home"
+      heading_1: "Home"
+      railstutorial_name_url: "Ruby on Rails Tutorial"
+      paragraph_1: "This is the home page for the"
+      paragraph_2: "sample application."
+    help:
+      title: "Help"
+      heading_1: "Help"
+      railstutorial_name_help_url: Rails Tutorial help page
+      railstutorial_name_book_url: Ruby on Rails Tutorial book
+      paragraph_1: "Get help on the Ruby on Rails Tutorial at the"
+      paragraph_2: ". To get help on this sample app, see the"
+    about:
+      title: "About"
+      heading_1: "About"
+      paragraph_1: "The"
+      paragraph_2: "is a"
+      paragraph_3: "and"
+      paragraph_4: "to teach web development with"
+      paragraph_5: "This is the sample application for the tutorial."
+      railstutorial_name_url: "Ruby on Rails Tutorial"
+      railstutorial_name_book_url: "book"
+      screencasts_rails_name_url: "screencast series"
+      rubyonrails_name_url: "Ruby on Rails"
+    contact:
+      title: "Contact"
+      heading_1: "Contact"
+      paragraph_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      railstutorial_contact_name_url: "contact page"
